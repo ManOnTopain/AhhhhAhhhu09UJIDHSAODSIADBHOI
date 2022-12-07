@@ -1,0 +1,1167 @@
+
+
+local MikeHUB = Instance.new("ScreenGui")
+local MikeHUB_2 = Instance.new("ScreenGui")
+local Blatant = Instance.new("TextLabel")
+local Main = Instance.new("ScrollingFrame")
+local KillAura = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local Fly = Instance.new("TextButton")
+local FunnyFly = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Value = Instance.new("TextBox")
+local ACDisabler = Instance.new("TextButton")
+local World = Instance.new("TextLabel")
+local Main_2 = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local PlayerTP = Instance.new("TextButton")
+local Value_2 = Instance.new("TextBox")
+local ESP = Instance.new("TextButton")
+local Gravity = Instance.new("TextButton")
+local Value_3 = Instance.new("TextBox")
+local Chill = Instance.new("TextButton")
+local Utility = Instance.new("TextLabel")
+local Main_3 = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local SPAM = Instance.new("TextButton")
+local Value_4 = Instance.new("TextBox")
+local AntiVoid = Instance.new("TextButton")
+local InfJUMP = Instance.new("TextButton")
+local WARNING = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local WarnLabel = Instance.new("TextLabel")
+local Middle = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Text = Instance.new("TextLabel")
+local MAIN = Instance.new("TextLabel")
+local Vers = Instance.new("TextLabel")
+
+--Properties:
+
+MikeHUB.Name = "MikeHUB"
+MikeHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MikeHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MikeHUB_2.Name = "MikeHUB"
+MikeHUB_2.Parent = MikeHUB
+MikeHUB_2.Enabled = false
+MikeHUB_2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Blatant.Name = "Blatant"
+Blatant.Parent = MikeHUB_2
+Blatant.Active = true
+Blatant.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blatant.Position = UDim2.new(0.0252252258, 0, 0.0682730973, 0)
+Blatant.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
+Blatant.Font = Enum.Font.SourceSansBold
+Blatant.Text = "BLATANT"
+Blatant.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blatant.TextScaled = true
+Blatant.TextSize = 14.000
+Blatant.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = Blatant
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Main.Position = UDim2.new(0, 0, 0.999999821, 0)
+Main.Size = UDim2.new(1, 0, 18.333334, 0)
+
+KillAura.Name = "KillAura"
+KillAura.Parent = Main
+KillAura.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+KillAura.Size = UDim2.new(0, 122, 0, 27)
+KillAura.Font = Enum.Font.SourceSans
+KillAura.Text = "Kill Aura"
+KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.TextScaled = true
+KillAura.TextSize = 14.000
+KillAura.TextWrapped = true
+
+UIListLayout.Parent = Main
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Fly.Size = UDim2.new(0, 122, 0, 27)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+FunnyFly.Name = "FunnyFly"
+FunnyFly.Parent = Main
+FunnyFly.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+FunnyFly.Size = UDim2.new(0, 122, 0, 27)
+FunnyFly.Font = Enum.Font.SourceSans
+FunnyFly.Text = "Funny Fly remake"
+FunnyFly.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunnyFly.TextScaled = true
+FunnyFly.TextSize = 14.000
+FunnyFly.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = Main
+Speed.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Speed.Size = UDim2.new(0, 122, 0, 27)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+Value.Name = "Value"
+Value.Parent = Speed
+Value.BackgroundColor3 = Color3.fromRGB(158, 158, 40)
+Value.Position = UDim2.new(0, 0, 0.296296299, 0)
+Value.Size = UDim2.new(1, 0, 0.370370358, 0)
+Value.Visible = false
+Value.ClearTextOnFocus = false
+Value.Font = Enum.Font.SourceSans
+Value.PlaceholderText = "Spam Text here"
+Value.Text = ""
+Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value.TextScaled = true
+Value.TextSize = 14.000
+Value.TextWrapped = true
+
+ACDisabler.Name = "ACDisabler"
+ACDisabler.Parent = Main
+ACDisabler.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ACDisabler.Size = UDim2.new(0, 122, 0, 27)
+ACDisabler.Font = Enum.Font.SourceSans
+ACDisabler.Text = "Anti Cheat Disabler"
+ACDisabler.TextColor3 = Color3.fromRGB(0, 0, 0)
+ACDisabler.TextScaled = true
+ACDisabler.TextSize = 14.000
+ACDisabler.TextWrapped = true
+
+World.Name = "World"
+World.Parent = MikeHUB_2
+World.Active = true
+World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+World.Position = UDim2.new(0.182882875, 0, 0.0682730973, 0)
+World.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
+World.Font = Enum.Font.SourceSansBold
+World.Text = "World"
+World.TextColor3 = Color3.fromRGB(255, 255, 255)
+World.TextScaled = true
+World.TextSize = 14.000
+World.TextWrapped = true
+
+Main_2.Name = "Main"
+Main_2.Parent = World
+Main_2.Active = true
+Main_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Main_2.Position = UDim2.new(0, 0, 0.999999821, 0)
+Main_2.Size = UDim2.new(1, 0, 18.333334, 0)
+
+UIListLayout_2.Parent = Main_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+PlayerTP.Name = "PlayerTP"
+PlayerTP.Parent = Main_2
+PlayerTP.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+PlayerTP.Size = UDim2.new(0, 122, 0, 27)
+PlayerTP.Font = Enum.Font.SourceSans
+PlayerTP.Text = "Player TP (right click)"
+PlayerTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerTP.TextScaled = true
+PlayerTP.TextSize = 14.000
+PlayerTP.TextWrapped = true
+
+Value_2.Name = "Value"
+Value_2.Parent = PlayerTP
+Value_2.BackgroundColor3 = Color3.fromRGB(158, 158, 40)
+Value_2.Position = UDim2.new(0, 0, 0.296296299, 0)
+Value_2.Size = UDim2.new(1, 0, 0.370370358, 0)
+Value_2.Visible = false
+Value_2.ClearTextOnFocus = false
+Value_2.Font = Enum.Font.SourceSans
+Value_2.PlaceholderText = "PLAYER USERNAME HERE"
+Value_2.Text = ""
+Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_2.TextScaled = true
+Value_2.TextSize = 14.000
+Value_2.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = Main_2
+ESP.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ESP.Size = UDim2.new(0, 122, 0, 27)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+Gravity.Name = "Gravity"
+Gravity.Parent = Main_2
+Gravity.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Gravity.Size = UDim2.new(0, 122, 0, 27)
+Gravity.Font = Enum.Font.SourceSans
+Gravity.Text = "Gravity (right click)"
+Gravity.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gravity.TextScaled = true
+Gravity.TextSize = 14.000
+Gravity.TextWrapped = true
+
+Value_3.Name = "Value"
+Value_3.Parent = Gravity
+Value_3.BackgroundColor3 = Color3.fromRGB(158, 158, 40)
+Value_3.Position = UDim2.new(0, 0, 0.296296299, 0)
+Value_3.Size = UDim2.new(1, 0, 0.370370358, 0)
+Value_3.Visible = false
+Value_3.ClearTextOnFocus = false
+Value_3.Font = Enum.Font.SourceSans
+Value_3.PlaceholderText = "Gravity Value here"
+Value_3.Text = ""
+Value_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_3.TextScaled = true
+Value_3.TextSize = 14.000
+Value_3.TextWrapped = true
+
+Chill.Name = "Chill"
+Chill.Parent = Main_2
+Chill.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Chill.Size = UDim2.new(0, 122, 0, 27)
+Chill.Font = Enum.Font.SourceSans
+Chill.Text = "Chill"
+Chill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chill.TextScaled = true
+Chill.TextSize = 14.000
+Chill.TextWrapped = true
+
+Utility.Name = "Utility"
+Utility.Parent = MikeHUB_2
+Utility.Active = true
+Utility.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Utility.Position = UDim2.new(0.345945954, 0, 0.0662650615, 0)
+Utility.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
+Utility.Font = Enum.Font.SourceSansBold
+Utility.Text = "Utility"
+Utility.TextColor3 = Color3.fromRGB(255, 255, 255)
+Utility.TextScaled = true
+Utility.TextSize = 14.000
+Utility.TextWrapped = true
+
+Main_3.Name = "Main"
+Main_3.Parent = Utility
+Main_3.Active = true
+Main_3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Main_3.Position = UDim2.new(0, 0, 0.999999821, 0)
+Main_3.Size = UDim2.new(1, 0, 18.333334, 0)
+
+UIListLayout_3.Parent = Main_3
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+SPAM.Name = "SPAM"
+SPAM.Parent = Main_3
+SPAM.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+SPAM.Size = UDim2.new(0, 122, 0, 27)
+SPAM.Font = Enum.Font.SourceSans
+SPAM.Text = "Spam"
+SPAM.TextColor3 = Color3.fromRGB(0, 0, 0)
+SPAM.TextScaled = true
+SPAM.TextSize = 14.000
+SPAM.TextWrapped = true
+
+Value_4.Name = "Value"
+Value_4.Parent = SPAM
+Value_4.BackgroundColor3 = Color3.fromRGB(158, 158, 40)
+Value_4.Position = UDim2.new(0, 0, 0.296296299, 0)
+Value_4.Size = UDim2.new(1, 0, 0.370370358, 0)
+Value_4.Visible = false
+Value_4.ClearTextOnFocus = false
+Value_4.Font = Enum.Font.SourceSans
+Value_4.PlaceholderText = "Spam Text here"
+Value_4.Text = ""
+Value_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_4.TextScaled = true
+Value_4.TextSize = 14.000
+Value_4.TextWrapped = true
+
+AntiVoid.Name = "AntiVoid"
+AntiVoid.Parent = Main_3
+AntiVoid.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+AntiVoid.Size = UDim2.new(0, 122, 0, 27)
+AntiVoid.Font = Enum.Font.SourceSans
+AntiVoid.Text = "Anti Void"
+AntiVoid.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiVoid.TextScaled = true
+AntiVoid.TextSize = 14.000
+AntiVoid.TextWrapped = true
+
+InfJUMP.Name = "InfJUMP"
+InfJUMP.Parent = Main_3
+InfJUMP.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+InfJUMP.Size = UDim2.new(0, 122, 0, 27)
+InfJUMP.Font = Enum.Font.SourceSans
+InfJUMP.Text = "Inf Jump"
+InfJUMP.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfJUMP.TextScaled = true
+InfJUMP.TextSize = 14.000
+InfJUMP.TextWrapped = true
+
+WARNING.Name = "WARNING"
+WARNING.Parent = MikeHUB
+WARNING.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+WARNING.BackgroundTransparency = 0.600
+WARNING.Position = UDim2.new(0.707207203, 0, 0.72489959, 0)
+WARNING.Size = UDim2.new(0.270270258, 0, 0.246987954, 0)
+WARNING.Visible = false
+
+UICorner.Parent = WARNING
+
+WarnLabel.Name = "WarnLabel"
+WarnLabel.Parent = WARNING
+WarnLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WarnLabel.BackgroundTransparency = 1.000
+WarnLabel.Size = UDim2.new(0.193333313, 0, 1, 0)
+WarnLabel.Font = Enum.Font.SourceSans
+WarnLabel.Text = "!"
+WarnLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+WarnLabel.TextScaled = true
+WarnLabel.TextSize = 14.000
+WarnLabel.TextWrapped = true
+
+Middle.Name = "Middle"
+Middle.Parent = WARNING
+Middle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Middle.Position = UDim2.new(0.193333328, 0, 0.333333313, 0)
+Middle.Size = UDim2.new(0, 242, 0, 10)
+Middle.Font = Enum.Font.SourceSans
+Middle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Middle.TextSize = 14.000
+
+Title.Name = "Title"
+Title.Parent = WARNING
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.193333328, 0, 0, 0)
+Title.Size = UDim2.new(0, 242, 0, 41)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "TITLE"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Text.Name = "Text"
+Text.Parent = WARNING
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(0.216666669, 0, 0.51219511, 0)
+Text.Size = UDim2.new(0, 227, 0, 46)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "TEXT"
+Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+MAIN.Name = "MAIN"
+MAIN.Parent = MikeHUB
+MAIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAIN.BackgroundTransparency = 1.000
+MAIN.Position = UDim2.new(0.898198187, 0, 0.0547368415, 0)
+MAIN.Size = UDim2.new(0.0693693683, 0, 0.105263159, 0)
+MAIN.Font = Enum.Font.Unknown
+MAIN.Text = "MIKE"
+MAIN.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAIN.TextScaled = true
+MAIN.TextSize = 14.000
+MAIN.TextWrapped = true
+
+Vers.Name = "Vers"
+Vers.Parent = MAIN
+Vers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vers.BackgroundTransparency = 1.000
+Vers.Position = UDim2.new(1, 0, 0.23473686, 0)
+Vers.Size = UDim2.new(0.461074829, 0, 0.625263393, 0)
+Vers.Font = Enum.Font.Unknown
+Vers.Text = "V1"
+Vers.TextColor3 = Color3.fromRGB(42, 255, 56)
+Vers.TextScaled = true
+Vers.TextSize = 14.000
+Vers.TextWrapped = true
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- MikeHUB_2.asKSA
+	local script = Instance.new('ModuleScript', MikeHUB_2)
+	script.Name = "asKSA"
+	local function module_script()
+		local config = {}
+			config.Privates = "YMikeOfficialYT" or "CoolBoyEli08" or "2ru198e7219raad"
+		return config
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+do -- MikeHUB.Keybindconfig
+	local script = Instance.new('ModuleScript', MikeHUB)
+	script.Name = "Keybindconfig"
+	local function module_script()
+		local Configuration = {}
+		
+		Configuration.RunKey = Enum.KeyCode.LeftAlt
+		
+		return Configuration
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
+-- Scripts:
+
+local function WMNWAQN_fake_script() -- Blatant.Draggable 
+	local script = Instance.new('LocalScript', Blatant)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(WMNWAQN_fake_script)()
+local function OFDF_fake_script() -- KillAura.LocalScript 
+	local script = Instance.new('LocalScript', KillAura)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local players = game.Players
+	local plr = players.LocalPlayer
+	local cam = workspace.CurrentCamera
+	local SwordCont = debug.getupvalue(require(plr.PlayerScripts.TS.knit).setup, 6).Controllers.SwordController
+	local enabled = false
+	local DistanceValue = {["Value"] = 14}
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if enabled == false then
+			enabled = true
+			repeat
+				wait(0.1)
+				for i,v in pairs(game.Players:GetPlayers()) do
+					local char = v.Character
+					if char and v.Name ~= game.Players.LocalPlayer.Name and char:FindFirstChild("HumanoidRootPart") then
+						local Kell = (char.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+						if Kell <= DistanceValue["Value"] and v.Team ~= game.Players.LocalPlayer.Team and char:FindFirstChild("Humanoid") then
+							if char.Humanoid.Health > 0 then
+								SwordCont:swingSwordAtMouse()
+							end
+						end
+					end
+				end
+			until enabled == false
+		else
+			enabled = false
+		end
+	end)
+end
+coroutine.wrap(OFDF_fake_script)()
+local function PYPIU_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("Humanoid")
+	local enabled = false
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if enabled == false then
+			enabled = true
+			repeat
+				human:ChangeState("Jumping")
+				wait(0.3)
+			until enabled == false
+		else
+			enabled = false
+		end
+	end)
+end
+coroutine.wrap(PYPIU_fake_script)()
+local function HXBCXJ_fake_script() -- FunnyFly.LocalScript 
+	local script = Instance.new('LocalScript', FunnyFly)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("Humanoid")
+	local enabled = false
+	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
+	if lplr.Name == config.Privates then
+		print("PRIVATE USER")
+	else
+		script.Parent:Destroy()
+		print("PUBLIC USER")
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if enabled == false then
+			enabled = true
+	
+				human:ChangeState("Jumping")
+			wait(0.1)
+			human:ChangeState("Jumping")
+			game.Workspace.Gravity = 0
+		else
+			enabled = false
+			game.Workspace.Gravity = 192.6194
+		end
+	end)
+end
+coroutine.wrap(HXBCXJ_fake_script)()
+local function ZHJA_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("Humanoid")
+	local enabled = false
+	local value = script.Parent.Value
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+			if value.Text == "" then
+				human.WalkSpeed = 23
+			else
+				human.WalkSpeed = value.Text
+			end
+			else
+			enabled = false
+			human.WalkSpeed = 16
+			end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		if value.Visible == false then
+			value.Visible = true
+			
+		else
+			
+			value.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ZHJA_fake_script)()
+local function GWDIZ_fake_script() -- ACDisabler.LocalScript 
+	local script = Instance.new('LocalScript', ACDisabler)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("Humanoid")
+	local enabled = false
+	local value = script.Parent.Value
+	local entity = lplr
+	
+	local function WARN(Title, Text)
+		local lplr = game.Players.LocalPlayer
+		local GUI = lplr.PlayerGui:FindFirstChild("MikeHUB").WARNING
+		local Titlee = GUI.Title
+		local Texte = GUI.Text
+	
+		GUI.Visible = true
+		Titlee.Text = Title
+		Texte.Text = Text
+		wait(6)
+		GUI.Visible = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+			if (lplr.Character:FindFirstChildWhichIsA("ForceField")) then
+				task.spawn(function()
+					entity.character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+					entity.character.Humanoid:ChangeState(Enum.HumanoidStateType.Dead)
+					repeat task.wait() until entity.character.Humanoid.MoveDirection ~= Vector3.zero
+					task.wait(0.2)
+					entity.character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+					entity.character.Humanoid:ChangeState(Enum.HumanoidStateType.Running)
+					workspace.Gravity = 192.6
+				WARN("AnticheatDisabler", "Disabled Anticheat!")
+				end)
+			else
+				WARN("AnticheatDisabler", "Failed to disable")
+			end
+		else
+			enabled = false
+		end
+		
+	
+		
+			
+	end)
+	
+	
+end
+coroutine.wrap(GWDIZ_fake_script)()
+local function GCZCFN_fake_script() -- World.Draggable 
+	local script = Instance.new('LocalScript', World)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(GCZCFN_fake_script)()
+local function PWZV_fake_script() -- PlayerTP.LocalScript 
+	local script = Instance.new('LocalScript', PlayerTP)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
+	local value = script.Parent.Value
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+			if game.Players:FindFirstChild(value.Text) then
+			human.CFrame = game.Players:FindFirstChild(value.Text).Character.HumanoidRootPart.CFrame
+			print(game.Players:FindFirstChild(value.Text).Name)
+			wait(0.1)
+		else
+			print("NOT AN PLAYER")
+			end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		if value.Visible == false then
+			value.Visible = true
+			
+		else
+			
+			value.Visible = false
+		end
+	end)
+end
+coroutine.wrap(PWZV_fake_script)()
+local function LYLDII_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if enabled == false then
+			enabled = true
+	
+			for i, v in pairs(game.Players:GetPlayers()) do
+	
+				if v.UserId == lplr.UserId then
+	
+				else
+					if v.Character:FindFirstChild("Highlight") then
+						v.Character.Highlight:Destroy()
+						
+					else
+	
+						local ESPLOCATE = v.Character
+						local ESP = Instance.new("Highlight", ESPLOCATE)
+						ESP.DepthMode = Enum.HighlightDepthMod.AlwaysOnTop
+						ESP.Enabled = true
+						ESP.Name = "Highlight"
+						ESP.FillColor = Color3.new(0,0,0)
+						ESP.FillTransparency = 1
+						ESP.OutlineColor = Color3.new(51,51,51)
+						ESP.OutlineTransparency = 0
+					end
+				end
+			end
+		else
+			enabled = false
+		end
+	end)
+end
+coroutine.wrap(LYLDII_fake_script)()
+local function AJAGUKX_fake_script() -- Gravity.LocalScript 
+	local script = Instance.new('LocalScript', Gravity)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
+	local value = script.Parent.Value
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+			if value.Text == "" then
+				game.Workspace.Gravity = 100
+			else
+				game.Workspace.Gravity = value.Text
+			end
+			else
+			enabled = false
+			game.Workspace.Gravity = 196.2
+			end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		if value.Visible == false then
+			value.Visible = true
+			
+		else
+			
+			value.Visible = false
+		end
+	end)
+end
+coroutine.wrap(AJAGUKX_fake_script)()
+local function WBXL_fake_script() -- Chill.LocalScript 
+	local script = Instance.new('LocalScript', Chill)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+	
+			if not game.Workspace:FindFirstChild("Smooth Vibes (c)") then
+				local smooth_vibesc = Instance.new("Sound")
+				smooth_vibesc.SoundId = "rbxassetid://9044565954"
+				smooth_vibesc.Name = "Smooth Vibes (c)"
+				smooth_vibesc.Parent = workspace
+				smooth_vibesc.Playing = true
+				smooth_vibesc.Looped = true
+			end
+			if not game.Lighting:FindFirstChild("Chill") then
+				local colorcorrection = Instance.new("ColorCorrectionEffect")
+				colorcorrection.TintColor = Color3.new(0.960784, 0.52549, 1)
+				colorcorrection.Parent = game.Lighting
+				colorcorrection.Name = "Chill"
+			end
+			else
+			enabled = false
+			if game.Workspace:FindFirstChild("Smooth Vibes (c)") then
+				game.Workspace["Smooth Vibes (c)"]:Destroy()
+				
+			end
+			if game.Lighting:FindFirstChild("Chill") then
+				game.Lighting.Chill:Destroy()
+			end
+			end
+	end)
+	
+	
+end
+coroutine.wrap(WBXL_fake_script)()
+local function XCFOWWK_fake_script() -- Utility.Draggable 
+	local script = Instance.new('LocalScript', Utility)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(XCFOWWK_fake_script)()
+local function KKHUWT_fake_script() -- SPAM.LocalScript 
+	local script = Instance.new('LocalScript', SPAM)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	local value = script.Parent.Value
+	local MainSpam = "Mike HUB On Top!"
+	local CustomSpam = value.Text
+	local Config = "All"
+	local MessageEvent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+			if value.Text == "" then
+				repeat
+					wait(0.6)
+					MessageEvent:FireServer(MainSpam, Config)
+				until enabled == false
+			else
+				repeat
+					wait(0.6)
+					MessageEvent:FireServer(CustomSpam, Config)
+				until enabled == false
+			end
+			else
+			enabled = false
+			
+			end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		if value.Visible == false then
+			value.Visible = true
+			
+		else
+			
+			value.Visible = false
+		end
+	end)
+end
+coroutine.wrap(KKHUWT_fake_script)()
+local function HFQR_fake_script() -- AntiVoid.LocalScript 
+	local script = Instance.new('LocalScript', AntiVoid)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("HumanoidRootPart")
+	local enabled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+			if not game.Workspace:FindFirstChild("VoidAntiAntiVoid") then
+			local void = Instance.new("Part")
+			void.Anchored = true
+			void.BottomSurface = Enum.SurfaceType.Smooth
+			void.BrickColor = BrickColor.new(0.3137255012989044, 0.4274510145187378, 0.3294117748737335)
+			void.CFrame = CFrame.fromMatrix(Vector3.new(533.9497680664062, -226.09999084472656, 598.949951171875), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+			void.Color = Color3.new(0.309804, 0.423529, 0.247059)
+			void.Size = Vector3.new(2047.9000244140625, 1, 2047.9000244140625)
+			void.TopSurface = Enum.SurfaceType.Smooth
+			void.Name = "VoidAntiAntiVoid"
+			void.Parent = workspace
+				
+			end
+			else
+			enabled = false
+			if game.Workspace:FindFirstChild('VoidAntiAntiVoid') then
+				game.Workspace.VoidAntiAntiVoid:Destroy()
+			end
+			end
+	end)
+	
+	
+end
+coroutine.wrap(HFQR_fake_script)()
+local function YUCQPW_fake_script() -- InfJUMP.LocalScript 
+	local script = Instance.new('LocalScript', InfJUMP)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game:GetService("Players")
+	local lplr = player.LocalPlayer
+	local human = lplr.Character:WaitForChild("Humanoid")
+	local enabled = false
+	local UIS = game:GetService("UserInputService")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if enabled == false then
+			enabled = true
+		
+			else
+			enabled = false
+			
+			end
+	end)
+	
+	
+		
+	UIS.JumpRequest:Connect(function()
+		if enabled == true then
+			human:ChangeState("Jumping")
+		end
+	end)
+	
+	
+end
+coroutine.wrap(YUCQPW_fake_script)()
+local function QCTSTU_fake_script() -- MikeHUB.AltToOpen 
+	local script = Instance.new('LocalScript', MikeHUB)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local GUI = script.Parent.MikeHUB
+	local UIS = game:GetService("UserInputService")
+	local enabled = false
+	local Configuration = require(script.Parent:WaitForChild("Keybindconfig"))
+	
+	
+	
+	UIS.InputBegan:Connect(function(key, proccess)
+		if key.KeyCode == Configuration.RunKey then
+			if enabled == false then
+				enabled = true
+				GUI.Enabled = true
+			else
+				enabled = false
+				GUI.Enabled = false
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(QCTSTU_fake_script)()
+local function RSYRZOT_fake_script() -- MikeHUB.Loader 
+	local script = Instance.new('LocalScript', MikeHUB)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local lplr = game.Players.LocalPlayer
+	local PRIVATE = require(script.Parent.MikeHUB.asKSA)
+	
+	
+	local function WARN(Title, Text)
+		local lplr = game.Players.LocalPlayer
+		local GUI = lplr.PlayerGui:FindFirstChild("MikeHUB").WARNING
+		local Titlee = GUI.Title
+		local Texte = GUI.Text
+		
+		GUI.Visible = true
+		Titlee.Text = Title
+		Texte.Text = Text
+		wait(6)
+		GUI.Visible = false
+	end
+	
+	if lplr.Name == PRIVATE.Privates then
+		WARN("Mike Private", "Loading Enjoy! left alt to open.")
+	else
+		WARN("Mike", "Loading Enjoy! left alt to open.")
+	end
+end
+coroutine.wrap(RSYRZOT_fake_script)()
+local function YDEU_fake_script() -- MAIN.LocalScript 
+	local script = Instance.new('LocalScript', MAIN)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local lplr = game.Players.LocalPlayer
+	local PRIVATE = require(script.Parent.Parent.MikeHUB.asKSA)
+	
+	if lplr.Name == PRIVATE.Privates then
+		script.Parent.Text = "MIKEPRIV"
+	end
+end
+coroutine.wrap(YDEU_fake_script)()
+local function FEEAO_fake_script() -- MikeHUB.Leding 
+	local script = Instance.new('LocalScript', MikeHUB)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	
+	local lplr = game.Players.LocalPlayer
+	local PRIVATE = require(script.Parent.MikeHUB.asKSA)
+	
+	for i, v in pairs(game.Players:GetPlayers()) do
+		if v.Name == PRIVATE.Privates then
+	
+			local Players = game:GetService("Players")
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local yes = v.Name
+			local ChatTag = {}
+			ChatTag[yes] =
+				{
+					TagText = "MIKE PRIV",
+					TagColor = Color3.new(0.454902, 0.458824, 0.247059),
+				}
+	
+	
+	
+			local oldchanneltab
+			local oldchannelfunc
+			local oldchanneltabs = {}
+	
+			--// Chat Listener
+			for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+				if
+					v.Function
+					and #debug.getupvalues(v.Function) > 0
+					and type(debug.getupvalues(v.Function)[1]) == "table"
+					and getmetatable(debug.getupvalues(v.Function)[1])
+					and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+				then
+					oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
+					oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+					getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
+						local tab = oldchannelfunc(Self, Name)
+						if tab and tab.AddMessageToChannel then
+							local addmessage = tab.AddMessageToChannel
+							if oldchanneltabs[tab] == nil then
+								oldchanneltabs[tab] = tab.AddMessageToChannel
+							end
+							tab.AddMessageToChannel = function(Self2, MessageData)
+								if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+									if ChatTag[Players[MessageData.FromSpeaker].Name] then
+										MessageData.ExtraData = {
+											NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
+												or Players[MessageData.FromSpeaker].TeamColor.Color,
+											Tags = {
+												table.unpack(MessageData.ExtraData.Tags),
+												{
+													TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
+													TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
+												},
+											},
+										}
+									end
+								end
+								return addmessage(Self2, MessageData)
+							end
+						end
+						return tab
+					end
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(FEEAO_fake_script)()
