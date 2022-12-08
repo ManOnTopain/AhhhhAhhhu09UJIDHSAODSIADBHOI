@@ -4,7 +4,7 @@ mike_hub.IgnoreGuiInset = false
 mike_hub.ResetOnSpawn = false
 mike_hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 mike_hub.Name = "MikeHUB"
-mike_hub.Parent = game.Players.LocalPlayer
+mike_hub.Parent = game.Players.LocalPlayer.PlayerGui
 
 local mike_hub_2 = Instance.new("ScreenGui")
 mike_hub_2.IgnoreGuiInset = false
