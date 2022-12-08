@@ -1,4 +1,4 @@
-
+print('loading')
 
 local MikeHUB = Instance.new("ScreenGui")
 local MikeHUB_2 = Instance.new("ScreenGui")
