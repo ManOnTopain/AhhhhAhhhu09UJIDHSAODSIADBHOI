@@ -39,7 +39,7 @@ local Vers = Instance.new("TextLabel")
 --Properties:
 
 MikeHUB.Name = "MikeHUB"
-MikeHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MikeHUB.Parent = game.Players.CoreGui
 MikeHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MikeHUB_2.Name = "MikeHUB"
