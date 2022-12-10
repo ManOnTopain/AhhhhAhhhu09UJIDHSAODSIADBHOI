@@ -381,11 +381,11 @@ local modules = {
 	[configure] = function()
 		local Configuration = {}
 		
-		local Combat = script.Parent.Main.Combat.Main.ScrollingFrame
-		local Blatant = script.Parent.Main.Blatant.Main.ScrollingFrame
-		local Render = script.Parent.Main.Render.Main.ScrollingFrame
-		local Utility = script.Parent.Main.Utility.Main.ScrollingFrame
-		local World = script.Parent.Main.World.Main.ScrollingFrame
+		local Combat = Main.Combat.Main.ScrollingFrame
+		local Blatant = Main.Blatant.Main.ScrollingFrame
+		local Render = Main.Render.Main.ScrollingFrame
+		local Utility = Main.Utility.Main.ScrollingFrame
+		local World = Main.World.Main.ScrollingFrame
 		
 		Configuration.RunKey = Enum.KeyCode.RightShift -- Change this to your key
 		
@@ -514,7 +514,7 @@ local modules = {
 
 --// Scripts
 
--- ShiftToRun
+-- ShiftToOpen
 task.spawn(function()
 	local script = shift_to_open
 
