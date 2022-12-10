@@ -383,9 +383,9 @@ local modules = {
 		
 		local Combat = main_2.ScrollingFrame
 		local Blatant = main_3.ScrollingFrame
-		local Render = Main.Render.Main.ScrollingFrame
-		local Utility = Main.Utility.Main.ScrollingFrame
-		local World = Main.World.Main.ScrollingFrame
+		local Render = main_4.ScrollingFrame
+		local Utility = main_5.ScrollingFrame
+		local World = main_6.ScrollingFrame
 		
 		Configuration.RunKey = Enum.KeyCode.RightShift -- Change this to your key
 		
