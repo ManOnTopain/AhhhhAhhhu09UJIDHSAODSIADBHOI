@@ -392,7 +392,7 @@ local modules = {
 		Configuration.Whitelisted = {"CoolBoyEli08", "YMikeOfficialYT"}
 		
 		Configuration.WARNING = function(Title, Text, seconds)
-			local GUI = script.Parent.WarnFrame
+			local GUI = warn_frame
 			local TitleText = GUI.Title
 			local TextText = GUI.Text
 			
