@@ -381,8 +381,8 @@ local modules = {
 	[configure] = function()
 		local Configuration = {}
 		
-		local Combat = Main.Combat.Main.ScrollingFrame
-		local Blatant = Main.Blatant.Main.ScrollingFrame
+		local Combat = main_2.ScrollingFrame
+		local Blatant = main_3.ScrollingFrame
 		local Render = Main.Render.Main.ScrollingFrame
 		local Utility = Main.Utility.Main.ScrollingFrame
 		local World = Main.World.Main.ScrollingFrame
