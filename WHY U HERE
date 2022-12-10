@@ -1,4 +1,11 @@
+print("Loading")
+if not isfolder("FakeVape") then
+makefolder("FakeVape")
+end
 
+if not isfile("FakeVape/help.txt") then
+	writefile("FakeVape/help.txt", "If u need help go to.. link soon")
+end
 
 local vapevxpev4 = Instance.new("ScreenGui")
 vapevxpev4.IgnoreGuiInset = false
