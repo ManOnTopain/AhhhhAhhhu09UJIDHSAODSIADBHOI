@@ -675,3 +675,6 @@ task.spawn(function()
 	
 end)
 
+	warning.BlatantButton("Host Panel", function()
+	game.Players.LocalPlayer.PlayerGui.Cmdr.Frame.Visible = true
+	end
