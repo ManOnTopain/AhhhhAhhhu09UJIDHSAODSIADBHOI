@@ -1,435 +1,341 @@
 
-local mike_hub = Instance.new("ScreenGui")
-mike_hub.IgnoreGuiInset = false
-mike_hub.ResetOnSpawn = false
-mike_hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-mike_hub.Name = "MikeHUB"
-mike_hub.Parent = game.Players.LocalPlayer.PlayerGui
 
-local mike_hub_2 = Instance.new("ScreenGui")
-mike_hub_2.IgnoreGuiInset = false
-mike_hub_2.ResetOnSpawn = false
-mike_hub_2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-mike_hub_2.Name = "MikeHUB"
-mike_hub_2.Parent = mike_hub
+local vapevxpev4 = Instance.new("ScreenGui")
+vapevxpev4.IgnoreGuiInset = false
+vapevxpev4.ResetOnSpawn = true
+vapevxpev4.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+vapevxpev4.Name = "VapeVxpeV4"
+vapevxpev4.Parent = game.Players:WaitForChild("YMikeOfficialYT").PlayerGui
 
-local blatant = Instance.new("TextLabel")
-blatant.Font = Enum.Font.SourceSansBold
-blatant.Text = "BLATANT"
-blatant.TextColor3 = Color3.new(1, 1, 1)
-blatant.TextScaled = true
-blatant.TextSize = 14
-blatant.TextWrapped = true
-blatant.Active = true
-blatant.BackgroundColor3 = Color3.new(0, 0, 0)
-blatant.Position = UDim2.new(0.0252252258, 0, 0.0682730973, 0)
-blatant.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
-blatant.Visible = true
-blatant.Name = "Blatant"
-blatant.Parent = mike_hub_2
+local configure = Instance.new("ModuleScript")
+configure.Name = "Configure"
+configure.Parent = vapevxpev4
 
-local draggable = Instance.new("LocalScript")
-draggable.Name = "Draggable"
-draggable.Parent = blatant
+local shift_to_open = Instance.new("LocalScript")
+shift_to_open.Name = "ShiftToRun"
+shift_to_open.Parent = vapevxpev4
 
-local main = Instance.new("ScrollingFrame")
-main.ScrollBarImageColor3 = Color3.new(0, 0, 0)
-main.Active = true
-main.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
-main.Position = UDim2.new(0, 0, 0.999999821, 0)
-main.Size = UDim2.new(1, 0, 18.333334, 0)
-main.Visible = true
+local main = Instance.new("Frame")
+main.BackgroundColor3 = Color3.new(1, 1, 1)
+main.BackgroundTransparency = 1
+main.Position = UDim2.new(0.0081081083, 0, 0.0160642564, 0)
+main.Size = UDim2.new(0.976576567, 0, 0.883534133, 0)
+main.Visible = false
 main.Name = "Main"
-main.Parent = blatant
+main.Parent = vapevxpev4
 
-local kill_aura = Instance.new("TextButton")
-kill_aura.Font = Enum.Font.SourceSans
-kill_aura.RichText = true
-kill_aura.Text = "Kill Aura"
-kill_aura.TextColor3 = Color3.new(0, 0, 0)
-kill_aura.TextScaled = true
-kill_aura.TextSize = 14
-kill_aura.TextWrapped = true
-kill_aura.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-kill_aura.Size = UDim2.new(0, 122, 0, 27)
-kill_aura.Visible = true
-kill_aura.Name = "KillAura"
-kill_aura.Parent = main
-
-local local_script = Instance.new("LocalScript")
-local_script.Parent = kill_aura
-
-local uilist_layout = Instance.new("UIListLayout")
-uilist_layout.SortOrder = Enum.SortOrder.LayoutOrder
-uilist_layout.Parent = main
-
-local fly = Instance.new("TextButton")
-fly.Font = Enum.Font.SourceSans
-fly.RichText = true
-fly.Text = "Fly"
-fly.TextColor3 = Color3.new(0, 0, 0)
-fly.TextScaled = true
-fly.TextSize = 14
-fly.TextWrapped = true
-fly.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-fly.Size = UDim2.new(0, 122, 0, 27)
-fly.Visible = true
-fly.Name = "Fly"
-fly.Parent = main
-
-local local_script_2 = Instance.new("LocalScript")
-local_script_2.Parent = fly
-
-local funnyfly = Instance.new("TextButton")
-funnyfly.Font = Enum.Font.SourceSans
-funnyfly.RichText = true
-funnyfly.Text = "Funny Fly remake"
-funnyfly.TextColor3 = Color3.new(0, 0, 0)
-funnyfly.TextScaled = true
-funnyfly.TextSize = 14
-funnyfly.TextWrapped = true
-funnyfly.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-funnyfly.Size = UDim2.new(0, 122, 0, 27)
-funnyfly.Visible = true
-funnyfly.Name = "FunnyFly"
-funnyfly.Parent = main
-
-local local_script_3 = Instance.new("LocalScript")
-local_script_3.Parent = funnyfly
-
-local speed = Instance.new("TextButton")
-speed.Font = Enum.Font.SourceSans
-speed.RichText = true
-speed.Text = "Speed"
-speed.TextColor3 = Color3.new(0, 0, 0)
-speed.TextScaled = true
-speed.TextSize = 14
-speed.TextWrapped = true
-speed.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-speed.Size = UDim2.new(0, 122, 0, 27)
-speed.Visible = true
-speed.Name = "Speed"
-speed.Parent = main
-
-local local_script_4 = Instance.new("LocalScript")
-local_script_4.Parent = speed
-
-local value = Instance.new("TextBox")
-value.Font = Enum.Font.SourceSans
-value.PlaceholderText = "Spam Text here"
-value.Text = ""
-value.TextColor3 = Color3.new(0, 0, 0)
-value.TextScaled = true
-value.TextSize = 14
-value.TextWrapped = true
-value.BackgroundColor3 = Color3.new(0.619608, 0.619608, 0.156863)
-value.Position = UDim2.new(0, 0, 0.296296299, 0)
-value.Size = UDim2.new(1, 0, 0.370370358, 0)
-value.Visible = false
-value.Name = "Value"
-value.Parent = speed
-
-local acdisabler = Instance.new("TextButton")
-acdisabler.Font = Enum.Font.SourceSans
-acdisabler.RichText = true
-acdisabler.Text = "Anti Cheat Disabler"
-acdisabler.TextColor3 = Color3.new(0, 0, 0)
-acdisabler.TextScaled = true
-acdisabler.TextSize = 14
-acdisabler.TextWrapped = true
-acdisabler.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-acdisabler.Size = UDim2.new(0, 122, 0, 27)
-acdisabler.Visible = true
-acdisabler.Name = "ACDisabler"
-acdisabler.Parent = main
-
-local local_script_5 = Instance.new("LocalScript")
-local_script_5.Parent = acdisabler
-
-local asksa = Instance.new("ModuleScript")
-asksa.Name = "asKSA"
-asksa.Parent = mike_hub_2
-
-local world = Instance.new("TextLabel")
-world.Font = Enum.Font.SourceSansBold
-world.Text = "World"
-world.TextColor3 = Color3.new(1, 1, 1)
-world.TextScaled = true
-world.TextSize = 14
-world.TextWrapped = true
-world.Active = true
-world.BackgroundColor3 = Color3.new(0, 0, 0)
-world.Position = UDim2.new(0.182882875, 0, 0.0682730973, 0)
-world.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
-world.Visible = true
-world.Name = "World"
-world.Parent = mike_hub_2
-
-local draggable_2 = Instance.new("LocalScript")
-draggable_2.Name = "Draggable"
-draggable_2.Parent = world
+local combat = Instance.new("Frame")
+combat.Active = true
+combat.BackgroundColor3 = Color3.new(0, 0, 0)
+combat.Position = UDim2.new(-0.00894648768, 0, -0.0204545408, 0)
+combat.Size = UDim2.new(0.118554093, 0, 0.0522727259, 0)
+combat.Visible = true
+combat.Name = "Combat"
+combat.Parent = main
 
 local main_2 = Instance.new("ScrollingFrame")
 main_2.ScrollBarImageColor3 = Color3.new(0, 0, 0)
 main_2.Active = true
-main_2.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+main_2.BackgroundColor3 = Color3.new(1, 0.509804, 0.509804)
+main_2.BackgroundTransparency = 1
 main_2.Position = UDim2.new(0, 0, 0.999999821, 0)
-main_2.Size = UDim2.new(1, 0, 18.333334, 0)
+main_2.Size = UDim2.new(1, 0, 17.826086, 0)
 main_2.Visible = true
 main_2.Name = "Main"
-main_2.Parent = world
+main_2.Parent = combat
 
-local uilist_layout_2 = Instance.new("UIListLayout")
-uilist_layout_2.SortOrder = Enum.SortOrder.LayoutOrder
-uilist_layout_2.Parent = main_2
+local scrolling_frame = Instance.new("ScrollingFrame")
+scrolling_frame.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+scrolling_frame.Active = true
+scrolling_frame.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+scrolling_frame.Size = UDim2.new(0, 136, 0, 410)
+scrolling_frame.Visible = true
+scrolling_frame.Parent = main_2
 
-local playerTp = Instance.new("TextButton")
-playerTp.Font = Enum.Font.SourceSans
-playerTp.RichText = true
-playerTp.Text = "Player TP (right click)"
-playerTp.TextColor3 = Color3.new(0, 0, 0)
-playerTp.TextScaled = true
-playerTp.TextSize = 14
-playerTp.TextWrapped = true
-playerTp.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-playerTp.Size = UDim2.new(0, 122, 0, 27)
-playerTp.Visible = true
-playerTp.Name = "PlayerTP"
-playerTp.Parent = main_2
+local button = Instance.new("TextButton")
+button.Font = Enum.Font.SourceSans
+button.TextColor3 = Color3.new(0, 0, 0)
+button.TextScaled = true
+button.TextSize = 14
+button.TextWrapped = true
+button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+button.Visible = true
+button.Name = "Button"
+button.Parent = scrolling_frame
 
-local local_script_6 = Instance.new("LocalScript")
-local_script_6.Parent = playerTp
+local text = Instance.new("TextLabel")
+text.Font = Enum.Font.SourceSansBold
+text.Text = "COMBAT"
+text.TextColor3 = Color3.new(1, 1, 1)
+text.TextScaled = true
+text.TextSize = 14
+text.TextWrapped = true
+text.BackgroundColor3 = Color3.new(1, 1, 1)
+text.BackgroundTransparency = 1
+text.Position = UDim2.new(0, 0, 0.252124578, 0)
+text.Size = UDim2.new(1, 0, 0.730769217, 0)
+text.Visible = true
+text.Name = "Text"
+text.Parent = combat
 
-local value_2 = Instance.new("TextBox")
-value_2.Font = Enum.Font.SourceSans
-value_2.PlaceholderText = "PLAYER USERNAME HERE"
-value_2.Text = ""
-value_2.TextColor3 = Color3.new(0, 0, 0)
-value_2.TextScaled = true
-value_2.TextSize = 14
-value_2.TextWrapped = true
-value_2.BackgroundColor3 = Color3.new(0.619608, 0.619608, 0.156863)
-value_2.Position = UDim2.new(0, 0, 0.296296299, 0)
-value_2.Size = UDim2.new(1, 0, 0.370370358, 0)
-value_2.Visible = false
-value_2.Name = "Value"
-value_2.Parent = playerTp
+local draggable = Instance.new("LocalScript")
+draggable.Name = "Draggable"
+draggable.Parent = combat
 
-local esp = Instance.new("TextButton")
-esp.Font = Enum.Font.SourceSans
-esp.RichText = true
-esp.Text = "ESP"
-esp.TextColor3 = Color3.new(0, 0, 0)
-esp.TextScaled = true
-esp.TextSize = 14
-esp.TextWrapped = true
-esp.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-esp.Size = UDim2.new(0, 122, 0, 27)
-esp.Visible = true
-esp.Name = "ESP"
-esp.Parent = main_2
-
-local local_script_7 = Instance.new("LocalScript")
-local_script_7.Parent = esp
-
-local gravity = Instance.new("TextButton")
-gravity.Font = Enum.Font.SourceSans
-gravity.RichText = true
-gravity.Text = "Gravity (right click)"
-gravity.TextColor3 = Color3.new(0, 0, 0)
-gravity.TextScaled = true
-gravity.TextSize = 14
-gravity.TextWrapped = true
-gravity.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-gravity.Size = UDim2.new(0, 122, 0, 27)
-gravity.Visible = true
-gravity.Name = "Gravity"
-gravity.Parent = main_2
-
-local local_script_8 = Instance.new("LocalScript")
-local_script_8.Parent = gravity
-
-local value_3 = Instance.new("TextBox")
-value_3.Font = Enum.Font.SourceSans
-value_3.PlaceholderText = "Gravity Value here"
-value_3.Text = ""
-value_3.TextColor3 = Color3.new(0, 0, 0)
-value_3.TextScaled = true
-value_3.TextSize = 14
-value_3.TextWrapped = true
-value_3.BackgroundColor3 = Color3.new(0.619608, 0.619608, 0.156863)
-value_3.Position = UDim2.new(0, 0, 0.296296299, 0)
-value_3.Size = UDim2.new(1, 0, 0.370370358, 0)
-value_3.Visible = false
-value_3.Name = "Value"
-value_3.Parent = gravity
-
-local chill = Instance.new("TextButton")
-chill.Font = Enum.Font.SourceSans
-chill.RichText = true
-chill.Text = "Chill"
-chill.TextColor3 = Color3.new(0, 0, 0)
-chill.TextScaled = true
-chill.TextSize = 14
-chill.TextWrapped = true
-chill.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-chill.Size = UDim2.new(0, 122, 0, 27)
-chill.Visible = true
-chill.Name = "Chill"
-chill.Parent = main_2
-
-local local_script_9 = Instance.new("LocalScript")
-local_script_9.Parent = chill
-
-local utility = Instance.new("TextLabel")
-utility.Font = Enum.Font.SourceSansBold
-utility.Text = "Utility"
-utility.TextColor3 = Color3.new(1, 1, 1)
-utility.TextScaled = true
-utility.TextSize = 14
-utility.TextWrapped = true
-utility.Active = true
-utility.BackgroundColor3 = Color3.new(0, 0, 0)
-utility.Position = UDim2.new(0.345945954, 0, 0.0662650615, 0)
-utility.Size = UDim2.new(0.109909907, 0, 0.0421686731, 0)
-utility.Visible = true
-utility.Name = "Utility"
-utility.Parent = mike_hub_2
-
-local draggable_3 = Instance.new("LocalScript")
-draggable_3.Name = "Draggable"
-draggable_3.Parent = utility
+local blatant = Instance.new("Frame")
+blatant.Active = true
+blatant.BackgroundColor3 = Color3.new(0, 0, 0)
+blatant.Position = UDim2.new(0.176607877, 0, -0.0204545371, 0)
+blatant.Size = UDim2.new(0.117690705, 0, 0.0522727259, 0)
+blatant.Visible = true
+blatant.Name = "Blatant"
+blatant.Parent = main
 
 local main_3 = Instance.new("ScrollingFrame")
 main_3.ScrollBarImageColor3 = Color3.new(0, 0, 0)
 main_3.Active = true
-main_3.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+main_3.BackgroundColor3 = Color3.new(1, 0.509804, 0.509804)
+main_3.BackgroundTransparency = 1
 main_3.Position = UDim2.new(0, 0, 0.999999821, 0)
-main_3.Size = UDim2.new(1, 0, 18.333334, 0)
+main_3.Size = UDim2.new(1, 0, 17.826086, 0)
 main_3.Visible = true
 main_3.Name = "Main"
-main_3.Parent = utility
+main_3.Parent = blatant
 
-local uilist_layout_3 = Instance.new("UIListLayout")
-uilist_layout_3.SortOrder = Enum.SortOrder.LayoutOrder
-uilist_layout_3.Parent = main_3
+local scrolling_frame_2 = Instance.new("ScrollingFrame")
+scrolling_frame_2.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+scrolling_frame_2.Active = true
+scrolling_frame_2.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+scrolling_frame_2.Size = UDim2.new(0, 136, 0, 410)
+scrolling_frame_2.Visible = true
+scrolling_frame_2.Parent = main_3
 
-local spam = Instance.new("TextButton")
-spam.Font = Enum.Font.SourceSans
-spam.RichText = true
-spam.Text = "Spam"
-spam.TextColor3 = Color3.new(0, 0, 0)
-spam.TextScaled = true
-spam.TextSize = 14
-spam.TextWrapped = true
-spam.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-spam.Size = UDim2.new(0, 122, 0, 27)
-spam.Visible = true
-spam.Name = "SPAM"
-spam.Parent = main_3
+local button_2 = Instance.new("TextButton")
+button_2.Font = Enum.Font.SourceSans
+button_2.TextColor3 = Color3.new(0, 0, 0)
+button_2.TextScaled = true
+button_2.TextSize = 14
+button_2.TextWrapped = true
+button_2.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+button_2.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+button_2.Visible = true
+button_2.Name = "Button"
+button_2.Parent = scrolling_frame_2
 
-local local_script_10 = Instance.new("LocalScript")
-local_script_10.Parent = spam
+local text_2 = Instance.new("TextLabel")
+text_2.Font = Enum.Font.SourceSansBold
+text_2.Text = "BLATANT"
+text_2.TextColor3 = Color3.new(1, 1, 1)
+text_2.TextScaled = true
+text_2.TextSize = 14
+text_2.TextWrapped = true
+text_2.BackgroundColor3 = Color3.new(1, 1, 1)
+text_2.BackgroundTransparency = 1
+text_2.Position = UDim2.new(0, 0, 0.252124578, 0)
+text_2.Size = UDim2.new(1, 0, 0.730769217, 0)
+text_2.Visible = true
+text_2.Name = "Text"
+text_2.Parent = blatant
 
-local value_4 = Instance.new("TextBox")
-value_4.Font = Enum.Font.SourceSans
-value_4.PlaceholderText = "Spam Text here"
-value_4.Text = ""
-value_4.TextColor3 = Color3.new(0, 0, 0)
-value_4.TextScaled = true
-value_4.TextSize = 14
-value_4.TextWrapped = true
-value_4.BackgroundColor3 = Color3.new(0.619608, 0.619608, 0.156863)
-value_4.Position = UDim2.new(0, 0, 0.296296299, 0)
-value_4.Size = UDim2.new(1, 0, 0.370370358, 0)
-value_4.Visible = false
-value_4.Name = "Value"
-value_4.Parent = spam
+local draggable_2 = Instance.new("LocalScript")
+draggable_2.Name = "Draggable"
+draggable_2.Parent = blatant
 
-local anti_void = Instance.new("TextButton")
-anti_void.Font = Enum.Font.SourceSans
-anti_void.RichText = true
-anti_void.Text = "Anti Void"
-anti_void.TextColor3 = Color3.new(0, 0, 0)
-anti_void.TextScaled = true
-anti_void.TextSize = 14
-anti_void.TextWrapped = true
-anti_void.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-anti_void.Size = UDim2.new(0, 122, 0, 27)
-anti_void.Visible = true
-anti_void.Name = "AntiVoid"
-anti_void.Parent = main_3
+local render = Instance.new("Frame")
+render.Active = true
+render.BackgroundColor3 = Color3.new(0, 0, 0)
+render.Position = UDim2.new(0.407323658, 0, -0.0204545371, 0)
+render.Size = UDim2.new(0.119417489, 0, 0.0522727259, 0)
+render.Visible = true
+render.Name = "Render"
+render.Parent = main
 
-local local_script_11 = Instance.new("LocalScript")
-local_script_11.Parent = anti_void
+local main_4 = Instance.new("ScrollingFrame")
+main_4.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+main_4.Active = true
+main_4.BackgroundColor3 = Color3.new(1, 0.509804, 0.509804)
+main_4.BackgroundTransparency = 1
+main_4.Position = UDim2.new(0, 0, 0.999999821, 0)
+main_4.Size = UDim2.new(1, 0, 17.826086, 0)
+main_4.Visible = true
+main_4.Name = "Main"
+main_4.Parent = render
 
-local inf_jump = Instance.new("TextButton")
-inf_jump.Font = Enum.Font.SourceSans
-inf_jump.RichText = true
-inf_jump.Text = "Inf Jump"
-inf_jump.TextColor3 = Color3.new(0, 0, 0)
-inf_jump.TextScaled = true
-inf_jump.TextSize = 14
-inf_jump.TextWrapped = true
-inf_jump.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-inf_jump.Size = UDim2.new(0, 122, 0, 27)
-inf_jump.Visible = true
-inf_jump.Name = "InfJUMP"
-inf_jump.Parent = main_3
+local scrolling_frame_3 = Instance.new("ScrollingFrame")
+scrolling_frame_3.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+scrolling_frame_3.Active = true
+scrolling_frame_3.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+scrolling_frame_3.Size = UDim2.new(0, 136, 0, 410)
+scrolling_frame_3.Visible = true
+scrolling_frame_3.Parent = main_4
 
-local local_script_12 = Instance.new("LocalScript")
-local_script_12.Parent = inf_jump
+local button_3 = Instance.new("TextButton")
+button_3.Font = Enum.Font.SourceSans
+button_3.TextColor3 = Color3.new(0, 0, 0)
+button_3.TextScaled = true
+button_3.TextSize = 14
+button_3.TextWrapped = true
+button_3.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+button_3.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+button_3.Visible = true
+button_3.Name = "Button"
+button_3.Parent = scrolling_frame_3
 
-local keybindconfig = Instance.new("ModuleScript")
-keybindconfig.Name = "Keybindconfig"
-keybindconfig.Parent = mike_hub
+local text_3 = Instance.new("TextLabel")
+text_3.Font = Enum.Font.SourceSansBold
+text_3.Text = "RENDER"
+text_3.TextColor3 = Color3.new(1, 1, 1)
+text_3.TextScaled = true
+text_3.TextSize = 14
+text_3.TextWrapped = true
+text_3.BackgroundColor3 = Color3.new(1, 1, 1)
+text_3.BackgroundTransparency = 1
+text_3.Position = UDim2.new(0, 0, 0.252124578, 0)
+text_3.Size = UDim2.new(1, 0, 0.730769217, 0)
+text_3.Visible = true
+text_3.Name = "Text"
+text_3.Parent = render
 
-local alt_to_open = Instance.new("LocalScript")
-alt_to_open.Name = "AltToOpen"
-alt_to_open.Parent = mike_hub
+local draggable_3 = Instance.new("LocalScript")
+draggable_3.Name = "Draggable"
+draggable_3.Parent = render
 
-local warning = Instance.new("Frame")
-warning.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
-warning.BackgroundTransparency = 0.6000000238418579
-warning.Position = UDim2.new(0.707207203, 0, 0.72489959, 0)
-warning.Size = UDim2.new(0.270270258, 0, 0.246987954, 0)
-warning.Visible = false
-warning.Name = "WARNING"
-warning.Parent = mike_hub
+local utility = Instance.new("Frame")
+utility.Active = true
+utility.BackgroundColor3 = Color3.new(0, 0, 0)
+utility.Position = UDim2.new(0.637057602, 0, -0.0227272641, 0)
+utility.Size = UDim2.new(0.115963914, 0, 0.0522727259, 0)
+utility.Visible = true
+utility.Name = "Utility"
+utility.Parent = main
+
+local main_5 = Instance.new("ScrollingFrame")
+main_5.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+main_5.Active = true
+main_5.BackgroundColor3 = Color3.new(1, 0.509804, 0.509804)
+main_5.BackgroundTransparency = 1
+main_5.Position = UDim2.new(0, 0, 0.999999821, 0)
+main_5.Size = UDim2.new(1, 0, 17.826086, 0)
+main_5.Visible = true
+main_5.Name = "Main"
+main_5.Parent = utility
+
+local scrolling_frame_4 = Instance.new("ScrollingFrame")
+scrolling_frame_4.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+scrolling_frame_4.Active = true
+scrolling_frame_4.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+scrolling_frame_4.Size = UDim2.new(0, 136, 0, 410)
+scrolling_frame_4.Visible = true
+scrolling_frame_4.Parent = main_5
+
+local button_4 = Instance.new("TextButton")
+button_4.Font = Enum.Font.SourceSans
+button_4.TextColor3 = Color3.new(0, 0, 0)
+button_4.TextScaled = true
+button_4.TextSize = 14
+button_4.TextWrapped = true
+button_4.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+button_4.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+button_4.Visible = true
+button_4.Name = "Button"
+button_4.Parent = scrolling_frame_4
+
+local text_4 = Instance.new("TextLabel")
+text_4.Font = Enum.Font.SourceSansBold
+text_4.Text = "UTILITY"
+text_4.TextColor3 = Color3.new(1, 1, 1)
+text_4.TextScaled = true
+text_4.TextSize = 14
+text_4.TextWrapped = true
+text_4.BackgroundColor3 = Color3.new(1, 1, 1)
+text_4.BackgroundTransparency = 1
+text_4.Position = UDim2.new(0, 0, 0.252124578, 0)
+text_4.Size = UDim2.new(1, 0, 0.730769217, 0)
+text_4.Visible = true
+text_4.Name = "Text"
+text_4.Parent = utility
+
+local draggable_4 = Instance.new("LocalScript")
+draggable_4.Name = "Draggable"
+draggable_4.Parent = utility
+
+local world = Instance.new("Frame")
+world.Active = true
+world.BackgroundColor3 = Color3.new(0, 0, 0)
+world.Position = UDim2.new(0.889372408, 0, -0.0204545371, 0)
+world.Size = UDim2.new(0.117690705, 0, 0.0522727259, 0)
+world.Visible = true
+world.Name = "World"
+world.Parent = main
+
+local main_6 = Instance.new("ScrollingFrame")
+main_6.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+main_6.Active = true
+main_6.BackgroundColor3 = Color3.new(1, 0.509804, 0.509804)
+main_6.BackgroundTransparency = 1
+main_6.Position = UDim2.new(0, 0, 0.999999821, 0)
+main_6.Size = UDim2.new(1, 0, 17.826086, 0)
+main_6.Visible = true
+main_6.Name = "Main"
+main_6.Parent = world
+
+local scrolling_frame_5 = Instance.new("ScrollingFrame")
+scrolling_frame_5.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+scrolling_frame_5.Active = true
+scrolling_frame_5.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+scrolling_frame_5.Size = UDim2.new(0, 136, 0, 410)
+scrolling_frame_5.Visible = true
+scrolling_frame_5.Parent = main_6
+
+local button_5 = Instance.new("TextButton")
+button_5.Font = Enum.Font.SourceSans
+button_5.TextColor3 = Color3.new(0, 0, 0)
+button_5.TextScaled = true
+button_5.TextSize = 14
+button_5.TextWrapped = true
+button_5.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+button_5.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+button_5.Visible = true
+button_5.Name = "Button"
+button_5.Parent = scrolling_frame_5
+
+local text_5 = Instance.new("TextLabel")
+text_5.Font = Enum.Font.SourceSansBold
+text_5.Text = "WORLD"
+text_5.TextColor3 = Color3.new(1, 1, 1)
+text_5.TextScaled = true
+text_5.TextSize = 14
+text_5.TextWrapped = true
+text_5.BackgroundColor3 = Color3.new(1, 1, 1)
+text_5.BackgroundTransparency = 1
+text_5.Position = UDim2.new(0, 0, 0.252124578, 0)
+text_5.Size = UDim2.new(1, 0, 0.730769217, 0)
+text_5.Visible = true
+text_5.Name = "Text"
+text_5.Parent = world
+
+local draggable_5 = Instance.new("LocalScript")
+draggable_5.Name = "Draggable"
+draggable_5.Parent = world
+
+local warn_frame = Instance.new("Frame")
+warn_frame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+warn_frame.BackgroundTransparency = 0.6000000238418579
+warn_frame.Position = UDim2.new(0.75071907, 0, 0.706827343, 0)
+warn_frame.Size = UDim2.new(0.249280915, 0, 0.269076318, 0)
+warn_frame.Visible = false
+warn_frame.Name = "WarnFrame"
+warn_frame.Parent = vapevxpev4
 
 local uicorner = Instance.new("UICorner")
-uicorner.Parent = warning
+uicorner.Parent = warn_frame
 
 local uistroke = Instance.new("UIStroke")
-uistroke.Parent = warning
-
-local warn_label = Instance.new("TextLabel")
-warn_label.Font = Enum.Font.SourceSans
-warn_label.Text = "!"
-warn_label.TextColor3 = Color3.new(0, 0, 0)
-warn_label.TextScaled = true
-warn_label.TextSize = 14
-warn_label.TextWrapped = true
-warn_label.BackgroundColor3 = Color3.new(1, 1, 1)
-warn_label.BackgroundTransparency = 1
-warn_label.Size = UDim2.new(0.193333313, 0, 1, 0)
-warn_label.Visible = true
-warn_label.Name = "WarnLabel"
-warn_label.Parent = warning
-
-local middle = Instance.new("TextLabel")
-middle.Font = Enum.Font.SourceSans
-middle.TextColor3 = Color3.new(0, 0, 0)
-middle.TextSize = 14
-middle.BackgroundColor3 = Color3.new(0, 0, 0)
-middle.Position = UDim2.new(0.193333328, 0, 0.333333313, 0)
-middle.Size = UDim2.new(0, 242, 0, 10)
-middle.Visible = true
-middle.Name = "Middle"
-middle.Parent = warning
+uistroke.Parent = warn_frame
 
 local title = Instance.new("TextLabel")
-title.Font = Enum.Font.SourceSans
+title.Font = Enum.Font.SourceSansBold
 title.Text = "TITLE"
 title.TextColor3 = Color3.new(0, 0, 0)
 title.TextScaled = true
@@ -437,89 +343,213 @@ title.TextSize = 14
 title.TextWrapped = true
 title.BackgroundColor3 = Color3.new(1, 1, 1)
 title.BackgroundTransparency = 1
-title.Position = UDim2.new(0.193333328, 0, 0, 0)
-title.Size = UDim2.new(0, 242, 0, 41)
+title.Position = UDim2.new(0.230769232, 0, 0, 0)
+title.Size = UDim2.new(0.769230783, 0, 0.335820884, 0)
 title.Visible = true
 title.Name = "Title"
-title.Parent = warning
+title.Parent = warn_frame
 
-local text = Instance.new("TextLabel")
-text.Font = Enum.Font.SourceSans
-text.Text = "TEXT"
-text.TextColor3 = Color3.new(0, 0, 0)
-text.TextScaled = true
-text.TextSize = 14
-text.TextWrapped = true
-text.BackgroundColor3 = Color3.new(1, 1, 1)
-text.BackgroundTransparency = 1
-text.Position = UDim2.new(0.216666669, 0, 0.51219511, 0)
-text.Size = UDim2.new(0, 227, 0, 46)
-text.Visible = true
-text.Name = "Text"
-text.Parent = warning
+local text_6 = Instance.new("TextLabel")
+text_6.Font = Enum.Font.SourceSansBold
+text_6.Text = "Text"
+text_6.TextColor3 = Color3.new(0, 0, 0)
+text_6.TextScaled = true
+text_6.TextSize = 14
+text_6.TextWrapped = true
+text_6.BackgroundColor3 = Color3.new(1, 1, 1)
+text_6.BackgroundTransparency = 1
+text_6.Position = UDim2.new(0.230769232, 0, 0.417910457, 0)
+text_6.Size = UDim2.new(0.769230783, 0, 0.455223888, 0)
+text_6.Visible = true
+text_6.Name = "Text"
+text_6.Parent = warn_frame
 
 local loader = Instance.new("LocalScript")
 loader.Name = "Loader"
-loader.Parent = mike_hub
-
-local main_4 = Instance.new("TextLabel")
-main_4.Font = Enum.Font.Unknown
-main_4.Text = "MIKE"
-main_4.TextColor3 = Color3.new(1, 1, 1)
-main_4.TextScaled = true
-main_4.TextSize = 14
-main_4.TextWrapped = true
-main_4.BackgroundColor3 = Color3.new(1, 1, 1)
-main_4.BackgroundTransparency = 1
-main_4.Position = UDim2.new(0.898198187, 0, 0.0547368415, 0)
-main_4.Size = UDim2.new(0.0693693683, 0, 0.105263159, 0)
-main_4.Visible = true
-main_4.Name = "MAIN"
-main_4.Parent = mike_hub
-
-local vers = Instance.new("TextLabel")
-vers.Font = Enum.Font.Unknown
-vers.Text = "V1"
-vers.TextColor3 = Color3.new(0.164706, 1, 0.219608)
-vers.TextScaled = true
-vers.TextSize = 14
-vers.TextWrapped = true
-vers.BackgroundColor3 = Color3.new(1, 1, 1)
-vers.BackgroundTransparency = 1
-vers.Position = UDim2.new(1, 0, 0.23473686, 0)
-vers.Size = UDim2.new(0.461074829, 0, 0.625263393, 0)
-vers.Visible = true
-vers.Name = "Vers"
-vers.Parent = main_4
-
-local local_script_13 = Instance.new("LocalScript")
-local_script_13.Parent = main_4
-
-local leding = Instance.new("LocalScript")
-leding.Name = "Leding"
-leding.Parent = mike_hub
+loader.Parent = vapevxpev4
 
 --// Modules
 
 local modules = {
-	[asksa] = function()
-		local config = {}
-			config.Privates = "YMikeOfficialYT" or "CoolBoyEli08" or "2ru198e7219raad"
-		return config
-		
-	end,
-	
-	[keybindconfig] = function()
+	[configure] = function()
 		local Configuration = {}
 		
-		Configuration.RunKey = Enum.KeyCode.LeftAlt
+		local Combat = script.Parent.Main.Combat.Main.ScrollingFrame
+		local Blatant = script.Parent.Main.Blatant.Main.ScrollingFrame
+		local Render = script.Parent.Main.Render.Main.ScrollingFrame
+		local Utility = script.Parent.Main.Utility.Main.ScrollingFrame
+		local World = script.Parent.Main.World.Main.ScrollingFrame
+		
+		Configuration.RunKey = Enum.KeyCode.RightShift -- Change this to your key
+		
+		Configuration.Whitelisted = {"CoolBoyEli08", "YMikeOfficialYT"}
+		
+		Configuration.WARNING = function(Title, Text, seconds)
+			local GUI = script.Parent.WarnFrame
+			local TitleText = GUI.Title
+			local TextText = GUI.Text
+			
+			GUI.Visible = true
+			TitleText.Text = Title
+			TextText.Text = Text
+			
+			task.wait(seconds)
+			GUI.Visible = false
+		end
+		
+		Configuration.CombatButton = function(Name, Call)
+			local button = Instance.new("TextButton")
+			button.Font = Enum.Font.SourceSans
+			button.TextColor3 = Color3.new(0, 0, 0)
+			button.TextScaled = true
+			button.TextSize = 14
+			button.TextWrapped = true
+			button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+			button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+			button.Visible = true
+			button.Name = Name
+			button.Parent = Combat
+			button.Text = Name
+			button.MouseButton1Click:Connect(function()
+				pcall(Call)
+				wait(0.1)
+				pcall(nil)
+			end)
+		end
+		
+		Configuration.BlatantButton = function(Name, Call)
+			local button = Instance.new("TextButton")
+			button.Font = Enum.Font.SourceSans
+			button.TextColor3 = Color3.new(0, 0, 0)
+			button.TextScaled = true
+			button.TextSize = 14
+			button.TextWrapped = true
+			button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+			button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+			button.Visible = true
+			button.Name = Name
+			button.Parent = Blatant
+			button.Text = Name
+			button.MouseButton1Click:Connect(function()
+				pcall(Call)
+				wait(0.1)
+				pcall(nil)
+			end)
+		end
+		
+		Configuration.RenderButton = function(Name, Call)
+			local button = Instance.new("TextButton")
+			button.Font = Enum.Font.SourceSans
+			button.TextColor3 = Color3.new(0, 0, 0)
+			button.TextScaled = true
+			button.TextSize = 14
+			button.TextWrapped = true
+			button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+			button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+			button.Visible = true
+			button.Name = Name
+			button.Parent = Render
+			button.Text = Name
+			button.MouseButton1Click:Connect(function()
+				pcall(Call)
+				wait(0.1)
+				pcall(nil)
+			end)
+		end
+		
+		Configuration.UtilityButton = function(Name, Call)
+			local button = Instance.new("TextButton")
+			button.Font = Enum.Font.SourceSans
+			button.TextColor3 = Color3.new(0, 0, 0)
+			button.TextScaled = true
+			button.TextSize = 14
+			button.TextWrapped = true
+			button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+			button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+			button.Visible = true
+			button.Name = Name
+			button.Parent = Utility
+			button.Text = Name
+			button.MouseButton1Click:Connect(function()
+				pcall(Call)
+				wait(0.1)
+				pcall(nil)
+			end)
+		end
+		
+		Configuration.WorldButton = function(Name, Call)
+			local button = Instance.new("TextButton")
+			button.Font = Enum.Font.SourceSans
+			button.TextColor3 = Color3.new(0, 0, 0)
+			button.TextScaled = true
+			button.TextSize = 14
+			button.TextWrapped = true
+			button.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+			button.Size = UDim2.new(0.889705896, 0, 0.0390243866, 0)
+			button.Visible = true
+			button.Name = Name
+			button.Parent = World
+			button.Text = Name
+			button.MouseButton1Click:Connect(function()
+				pcall(Call)
+				wait(0.1)
+				pcall(nil)
+			end)
+		end
+		
+		
+		
 		
 		return Configuration
 		
 	end
 }
 
+--// Scripts
 
+-- ShiftToRun
+task.spawn(function()
+	local script = shift_to_open
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+
+	
+	
+	
+	
+	local UIS = game:GetService("UserInputService")
+	local gui = script.Parent.Main
+	local Configuration = require(script.Parent:WaitForChild("Configure"))
+	local enabled = false
+	
+	UIS.InputBegan:Connect(function(key, proccess)
+		if key.KeyCode == Configuration.RunKey then
+			if enabled == false then
+				enabled = true
+				if not game.Lighting:FindFirstChild("Blur") then
+				local blurry = Instance.new("BlurEffect")
+				blurry.Parent = game.Lighting
+				end
+				gui.Visible = true
+			else
+				enabled = false
+				game.Lighting.Blur:Destroy()
+				gui.Visible = false
+			end
+		end
+	end)
+	
+	
+end)
+
+-- Draggable
 task.spawn(function()
 	local script = draggable
 
@@ -532,227 +562,6 @@ task.spawn(function()
 	end
 
 	script.Parent.Draggable = true
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local players = game.Players
-	local plr = players.LocalPlayer
-	local cam = workspace.CurrentCamera
-	local SwordCont = debug.getupvalue(require(plr.PlayerScripts.TS.knit).setup, 6).Controllers.SwordController
-	local enabled = false
-	local DistanceValue = {["Value"] = 14}
-	
-	
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if enabled == false then
-			enabled = true
-			repeat
-				wait(0.1)
-				for i,v in pairs(game.Players:GetPlayers()) do
-					local char = v.Character
-					if char and v.Name ~= game.Players.LocalPlayer.Name and char:FindFirstChild("HumanoidRootPart") then
-						local Kell = (char.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-						if Kell <= DistanceValue["Value"] and v.Team ~= game.Players.LocalPlayer.Team and char:FindFirstChild("Humanoid") then
-							if char.Humanoid.Health > 0 then
-								SwordCont:swingSwordAtMouse()
-							end
-						end
-					end
-				end
-			until enabled == false
-		else
-			enabled = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_2
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("Humanoid")
-	local enabled = false
-	
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if enabled == false then
-			enabled = true
-			repeat
-				human:ChangeState("Jumping")
-				wait(0.3)
-			until enabled == false
-		else
-			enabled = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_3
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("Humanoid")
-	local enabled = false
-	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
-	if lplr.Name == config.Privates then
-		print("PRIVATE USER")
-	else
-		script.Parent:Destroy()
-		print("PUBLIC USER")
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if enabled == false then
-			enabled = true
-	
-				human:ChangeState("Jumping")
-			wait(0.1)
-			human:ChangeState("Jumping")
-			game.Workspace.Gravity = 0
-		else
-			enabled = false
-			game.Workspace.Gravity = 192.6194
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_4
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("Humanoid")
-	local enabled = false
-	local value = script.Parent.Value
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-			if value.Text == "" then
-				human.WalkSpeed = 23
-			else
-				human.WalkSpeed = value.Text
-			end
-			else
-			enabled = false
-			human.WalkSpeed = 16
-			end
-	end)
-	
-	script.Parent.MouseButton2Click:Connect(function()
-		if value.Visible == false then
-			value.Visible = true
-			
-		else
-			
-			value.Visible = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_5
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("Humanoid")
-	local enabled = false
-	local value = script.Parent.Value
-	local entity = lplr
-	
-	local function WARN(Title, Text)
-		local lplr = game.Players.LocalPlayer
-		local GUI = lplr.PlayerGui:FindFirstChild("MikeHUB").WARNING
-		local Titlee = GUI.Title
-		local Texte = GUI.Text
-	
-		GUI.Visible = true
-		Titlee.Text = Title
-		Texte.Text = Text
-		wait(6)
-		GUI.Visible = false
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-			if (lplr.Character:FindFirstChildWhichIsA("ForceField")) then
-				task.spawn(function()
-					entity.character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
-					entity.character.Humanoid:ChangeState(Enum.HumanoidStateType.Dead)
-					repeat task.wait() until entity.character.Humanoid.MoveDirection ~= Vector3.zero
-					task.wait(0.2)
-					entity.character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
-					entity.character.Humanoid:ChangeState(Enum.HumanoidStateType.Running)
-					workspace.Gravity = 192.6
-				WARN("AnticheatDisabler", "Disabled Anticheat!")
-				end)
-			else
-				WARN("AnticheatDisabler", "Failed to disable")
-			end
-		else
-			enabled = false
-		end
-		
-	
-		
-			
-	end)
-	
-	
 end)
 
 -- Draggable
@@ -770,195 +579,6 @@ task.spawn(function()
 	script.Parent.Draggable = true
 end)
 
--- LocalScript
-task.spawn(function()
-	local script = local_script_6
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
-	local value = script.Parent.Value
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-			if game.Players:FindFirstChild(value.Text) then
-			human.CFrame = game.Players:FindFirstChild(value.Text).Character.HumanoidRootPart.CFrame
-			print(game.Players:FindFirstChild(value.Text).Name)
-			wait(0.1)
-		else
-			print("NOT AN PLAYER")
-			end
-	end)
-	
-	script.Parent.MouseButton2Click:Connect(function()
-		if value.Visible == false then
-			value.Visible = true
-			
-		else
-			
-			value.Visible = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_7
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		if enabled == false then
-			enabled = true
-	
-			for i, v in pairs(game.Players:GetPlayers()) do
-	
-				if v.UserId == lplr.UserId then
-	
-				else
-					if v.Character:FindFirstChild("Highlight") then
-						v.Character.Highlight:Destroy()
-						
-					else
-	
-						local ESPLOCATE = v.Character
-						local ESP = Instance.new("Highlight", ESPLOCATE)
-						ESP.DepthMode = Enum.HighlightDepthMod.AlwaysOnTop
-						ESP.Enabled = true
-						ESP.Name = "Highlight"
-						ESP.FillColor = Color3.new(0,0,0)
-						ESP.FillTransparency = 1
-						ESP.OutlineColor = Color3.new(51,51,51)
-						ESP.OutlineTransparency = 0
-					end
-				end
-			end
-		else
-			enabled = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_8
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
-	local value = script.Parent.Value
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-			if value.Text == "" then
-				game.Workspace.Gravity = 100
-			else
-				game.Workspace.Gravity = value.Text
-			end
-			else
-			enabled = false
-			game.Workspace.Gravity = 196.2
-			end
-	end)
-	
-	script.Parent.MouseButton2Click:Connect(function()
-		if value.Visible == false then
-			value.Visible = true
-			
-		else
-			
-			value.Visible = false
-		end
-	end)
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_9
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	local config = require(script.Parent.Parent.Parent.Parent.asKSA)
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-	
-			if not game.Workspace:FindFirstChild("Smooth Vibes (c)") then
-				local smooth_vibesc = Instance.new("Sound")
-				smooth_vibesc.SoundId = "rbxassetid://9044565954"
-				smooth_vibesc.Name = "Smooth Vibes (c)"
-				smooth_vibesc.Parent = workspace
-				smooth_vibesc.Playing = true
-				smooth_vibesc.Looped = true
-			end
-			if not game.Lighting:FindFirstChild("Chill") then
-				local colorcorrection = Instance.new("ColorCorrectionEffect")
-				colorcorrection.TintColor = Color3.new(0.960784, 0.52549, 1)
-				colorcorrection.Parent = game.Lighting
-				colorcorrection.Name = "Chill"
-			end
-			else
-			enabled = false
-			if game.Workspace:FindFirstChild("Smooth Vibes (c)") then
-				game.Workspace["Smooth Vibes (c)"]:Destroy()
-				
-			end
-			if game.Lighting:FindFirstChild("Chill") then
-				game.Lighting.Chill:Destroy()
-			end
-			end
-	end)
-	
-	
-end)
-
 -- Draggable
 task.spawn(function()
 	local script = draggable_3
@@ -974,9 +594,9 @@ task.spawn(function()
 	script.Parent.Draggable = true
 end)
 
--- LocalScript
+-- Draggable
 task.spawn(function()
-	local script = local_script_10
+	local script = draggable_4
 
 	local oldreq = require
 	local function require(target)
@@ -986,50 +606,12 @@ task.spawn(function()
 		return oldreq(target)
 	end
 
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	local value = script.Parent.Value
-	local MainSpam = "Mike HUB On Top!"
-	local CustomSpam = value.Text
-	local Config = "All"
-	local MessageEvent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-			if value.Text == "" then
-				repeat
-					wait(0.6)
-					MessageEvent:FireServer(MainSpam, Config)
-				until enabled == false
-			else
-				repeat
-					wait(0.6)
-					MessageEvent:FireServer(CustomSpam, Config)
-				until enabled == false
-			end
-			else
-			enabled = false
-			
-			end
-	end)
-	
-	script.Parent.MouseButton2Click:Connect(function()
-		if value.Visible == false then
-			value.Visible = true
-			
-		else
-			
-			value.Visible = false
-		end
-	end)
+	script.Parent.Draggable = true
 end)
 
--- LocalScript
+-- Draggable
 task.spawn(function()
-	local script = local_script_11
+	local script = draggable_5
 
 	local oldreq = require
 	local function require(target)
@@ -1039,109 +621,7 @@ task.spawn(function()
 		return oldreq(target)
 	end
 
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("HumanoidRootPart")
-	local enabled = false
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-			if not game.Workspace:FindFirstChild("VoidAntiAntiVoid") then
-			local void = Instance.new("Part")
-			void.Anchored = true
-			void.BottomSurface = Enum.SurfaceType.Smooth
-			void.BrickColor = BrickColor.new(0.3137255012989044, 0.4274510145187378, 0.3294117748737335)
-			void.CFrame = CFrame.fromMatrix(Vector3.new(533.9497680664062, -226.09999084472656, 598.949951171875), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
-			void.Color = Color3.new(0.309804, 0.423529, 0.247059)
-			void.Size = Vector3.new(2047.9000244140625, 1, 2047.9000244140625)
-			void.TopSurface = Enum.SurfaceType.Smooth
-			void.Name = "VoidAntiAntiVoid"
-			void.Parent = workspace
-				
-			end
-			else
-			enabled = false
-			if game.Workspace:FindFirstChild('VoidAntiAntiVoid') then
-				game.Workspace.VoidAntiAntiVoid:Destroy()
-			end
-			end
-	end)
-	
-	
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_12
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local player = game:GetService("Players")
-	local lplr = player.LocalPlayer
-	local human = lplr.Character:WaitForChild("Humanoid")
-	local enabled = false
-	local UIS = game:GetService("UserInputService")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			if enabled == false then
-			enabled = true
-		
-			else
-			enabled = false
-			
-			end
-	end)
-	
-	
-		
-	UIS.JumpRequest:Connect(function()
-		if enabled == true then
-			human:ChangeState("Jumping")
-		end
-	end)
-	
-	
-end)
-
--- AltToOpen
-task.spawn(function()
-	local script = alt_to_open
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local GUI = script.Parent.MikeHUB
-	local UIS = game:GetService("UserInputService")
-	local enabled = false
-	local Configuration = require(script.Parent:WaitForChild("Keybindconfig"))
-	
-	
-	
-	UIS.InputBegan:Connect(function(key, proccess)
-		if key.KeyCode == Configuration.RunKey then
-			if enabled == false then
-				enabled = true
-				GUI.Enabled = true
-			else
-				enabled = false
-				GUI.Enabled = false
-			end
-		end
-	end)
-	
-	
+	script.Parent.Draggable = true
 end)
 
 -- Loader
@@ -1156,126 +636,35 @@ task.spawn(function()
 		return oldreq(target)
 	end
 
+	local warning = require(script.Parent.Configure)
 	local lplr = game.Players.LocalPlayer
-	local PRIVATE = require(script.Parent.MikeHUB.asKSA)
 	
 	
-	local function WARN(Title, Text)
-		local lplr = game.Players.LocalPlayer
-		local GUI = lplr.PlayerGui:FindFirstChild("MikeHUB").WARNING
-		local Titlee = GUI.Title
-		local Texte = GUI.Text
-		
-		GUI.Visible = true
-		Titlee.Text = Title
-		Texte.Text = Text
-		wait(6)
-		GUI.Visible = false
-	end
+	for i, v in pairs(warning.Whitelisted) do
 	
-	if lplr.Name == PRIVATE.Privates then
-		WARN("Mike Private", "Loading Enjoy! left alt to open.")
-	else
-		WARN("Mike", "Loading Enjoy! left alt to open.")
-	end
-end)
-
--- LocalScript
-task.spawn(function()
-	local script = local_script_13
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	local lplr = game.Players.LocalPlayer
-	local PRIVATE = require(script.Parent.Parent.MikeHUB.asKSA)
-	
-	if lplr.Name == PRIVATE.Privates then
-		script.Parent.Text = "MIKEPRIV"
-	end
-end)
-
--- Leding
-task.spawn(function()
-	local script = leding
-
-	local oldreq = require
-	local function require(target)
-		if modules[target] then
-			return modules[target]()
-		end
-		return oldreq(target)
-	end
-
-	
-	local lplr = game.Players.LocalPlayer
-	local PRIVATE = require(script.Parent.MikeHUB.asKSA)
-	
-	for i, v in pairs(game.Players:GetPlayers()) do
-		if v.Name == PRIVATE.Privates then
-	
-			local Players = game:GetService("Players")
-			local ReplicatedStorage = game:GetService("ReplicatedStorage")
-			local yes = v.Name
-			local ChatTag = {}
-			ChatTag[yes] =
-				{
-					TagText = "MIKE PRIV",
-					TagColor = Color3.new(0.454902, 0.458824, 0.247059),
-				}
-	
-	
-	
-			local oldchanneltab
-			local oldchannelfunc
-			local oldchanneltabs = {}
-	
-			--// Chat Listener
-			for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
-				if
-					v.Function
-					and #debug.getupvalues(v.Function) > 0
-					and type(debug.getupvalues(v.Function)[1]) == "table"
-					and getmetatable(debug.getupvalues(v.Function)[1])
-					and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
-				then
-					oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
-					oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
-					getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
-						local tab = oldchannelfunc(Self, Name)
-						if tab and tab.AddMessageToChannel then
-							local addmessage = tab.AddMessageToChannel
-							if oldchanneltabs[tab] == nil then
-								oldchanneltabs[tab] = tab.AddMessageToChannel
-							end
-							tab.AddMessageToChannel = function(Self2, MessageData)
-								if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
-									if ChatTag[Players[MessageData.FromSpeaker].Name] then
-										MessageData.ExtraData = {
-											NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
-												or Players[MessageData.FromSpeaker].TeamColor.Color,
-											Tags = {
-												table.unpack(MessageData.ExtraData.Tags),
-												{
-													TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
-													TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
-												},
-											},
-										}
-									end
-								end
-								return addmessage(Self2, MessageData)
-							end
-						end
-						return tab
-					end
-				end
-			end
+		if lplr.Name == v then
+			warning.WARNING("Vape Private", "Loaded, right shift to open", 6)
+			print("Vape Private User")
+		else
+			warning.WARNING("Vape", "Loaded, right shift to open", 6)
+			print("Vape Public User")
 		end
 	end
+	
+	
+	
+	
+	local FlyEnabled = false
+	warning.BlatantButton("Fly", function()
+		if FlyEnabled == false then
+			FlyEnabled = true
+			game.Workspace.Gravity = 0
+			lplr.Character:WaitForChild("Humanoid"):ChangeState("Jumping")
+		else
+			FlyEnabled = false
+			game.Workspace.Gravity = 196.2
+		end
+	end)
+	
 end)
+
